@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+channels = "*"
+asgi-redis = "*"
+asgiref = "*"
+channels-redis = "*"
+django-extensions = "*"
+graphviz = "*"
+pygraphviz = "*"
+pydotplus = "*"
+psycopg2 = "*"
+social-auth-app-django = "*"
+python-jose = "*"
+python-dotenv = "*"
+
+[requires]
+python_version = "3.7"

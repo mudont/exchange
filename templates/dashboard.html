@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/app.css" rel="stylesheet">
+
+    <title>Dashboard</title>
+</head>
+<body>
+
+<div class="logged-in-box auth0-box logged-in">
+    <p>
+    <h2>Welcome {{ user.username }}</h2>
+
+    <a class="btn btn-xs" href="/data_feed">Order/Trade Feed</a>
+    <a class="btn btn-xs" href="/exchange/order_book/IndWChamp19">Order book</a>
+    <a class="btn btn-xs" href="/exchange/recent_trades/">Recent trades</a>
+  
+    <a class="btn btn-xs" href="/admin">Admin</a>
+    <a class="btn btn-xs" href="/logout">Logout</a>
+    <br>
+    <pre>{{ userdata }}</pre>
+    
+    <img style="object-fit: cover;max-width: 100px; max-height: 100px" class="avatar" src="{{ auth0User.extra_data.picture }}"/>
+    
+</div>
+</body>
+</html>

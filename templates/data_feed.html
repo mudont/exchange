@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}Exchange Data Feed{% endblock %}
+{% block header_text %}Exchange Feed{% endblock %}
+
+{% block content %}
+    If any orders or trades are updated, you will see the changes here in realtime.
+
+    <div id="chats">
+                    <div class='room' id='room-1'>
+                    <h2> Exchange Data Feed </h2>
+                    <div class='messages'></div>
+                    </div>
+
+     </div>
+{% endblock %}
+
+
+{% block extra_body %}
+    <script>
+        $(function () {
+            // Correctly decide between ws:// and wss://
+            var ws_scheme = window.location.protocol == "https:" ? "wss" : "ws";
+            var ws_path = ws_scheme + '://' + window.location.host + "/data_feed/stream/";
+            console.log("Connecting to " + ws_path);
+            
+            var roomdiv = $(
+             );
+            var socket = new ReconnectingWebSocket(ws_path);
+
+            // Handle incoming messages
+            socket.onmessage = function (message) {
+                // Decode the JSON
+                console.log("Got websocket message " + message.data);
+                var data = JSON.parse(message.data);
+                var msgdiv = $("#room-1" + " .messages");
+                var ok_msg = "";
+                ok_msg = "<div class='message'>" +
+                            "<span class='body'>" + JSON.stringify(data) + "</span>" +
+                         "</div>";
+                msgdiv.append(ok_msg);
+
+                msgdiv.scrollTop(msgdiv.prop("scrollHeight"));
+                
+            };
+
+            // Says if we joined a room or not by if there's a div for it
+            inRoom = function (roomId) {
+                return $("#room-" + roomId).length > 0;
+            };
+
+            // Room join/leave
+            $("li.room-link").click(function () {
+                roomId = $(this).attr("data-room-id");
+                if (inRoom(roomId)) {
+                    // Leave room
+                    $(this).removeClass("joined");
+                    socket.send(JSON.stringify({
+                        "command": "leave",
+                        "room": roomId
+                    }));
+                } else {
+                    // Join room
+                    $(this).addClass("joined");
+                    socket.send(JSON.stringify({
+                        "command": "join",
+                        "room": roomId
+                    }));
+                }
+            });
+
+            // Helpful debugging
+            socket.onopen = function () {
+                console.log("Connected to chat socket");
+            };
+            socket.onclose = function () {
+                console.log("Disconnected from chat socket");
+            }
+        });
+    </script>
+{% endblock %}

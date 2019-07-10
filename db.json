@@ -1,0 +1,2456 @@
+[
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "Family and Friends",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "All",
+        "permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$RZcpFHTrjl2Y$7p29kuX9OxWFsGCLYTLhY6KVzsBz0chKTgFOez1f8Q0=",
+        "last_login": "2019-04-18T14:28:20Z",
+        "is_superuser": true,
+        "username": "murali",
+        "first_name": "Murali",
+        "last_name": "Donthireddy",
+        "email": "maverickone@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-04-16T17:20:06Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+        "password": "!2RWH84cvjofkfKCbGGea1pmW7lAhkUDMibAWkHmF",
+        "last_login": "2019-04-21T19:34:29.076Z",
+        "is_superuser": true,
+        "username": "maverickone",
+        "first_name": "Murali D",
+        "last_name": "",
+        "email": "maverickone@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-04-16T18:38:28Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+        "password": "!tHLgpGKtww7oLUb4VEpHyUfS7jzHLptGZKeBh07z",
+        "last_login": "2019-04-16T19:01:26Z",
+        "is_superuser": true,
+        "username": "donthireddy",
+        "first_name": "Muralidhar Reddy Donthireddy",
+        "last_name": "",
+        "email": "donthireddy@yahoo.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-04-16T18:39:52Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+        "password": "!nJnR3adYUCfHR4O8kA7RLHiUy9u7anQu6GDXqKCq",
+        "last_login": "2019-04-20T19:27:59.485Z",
+        "is_superuser": true,
+        "username": "gayamtech",
+        "first_name": "Anuha Gayam",
+        "last_name": "",
+        "email": "gayamtech@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-04-18T00:08:42Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4nnt8bnpp0g3s3joexsstv5zmpo8o6e1",
+    "fields": {
+        "session_data": "NTAxZTgyOTgyNjA2NDc0Y2ZhYmE3ZmYwYjk1NGIzNzIwMTUzZGViNTp7ImF1dGgwX3N0YXRlIjoianhTQndPa2FOSXdhRjJOM2JQWmd3eGdoR1NOOG1lMkUiLCJfYXV0aF91c2VyX2lkIjoiOCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6Im15X2F1dGgwLmF1dGgwYmFja2VuZC5BdXRoMCIsIl9hdXRoX3VzZXJfaGFzaCI6ImEzZTdkNjAzMzJjODFjM2ZiNGY1MTE0MWJjNjc5ZTA2YTQ2MjZmNWMiLCJzb2NpYWxfYXV0aF9sYXN0X2xvZ2luX2JhY2tlbmQiOiJhdXRoMCJ9",
+        "expire_date": "2019-05-04T19:27:59.489Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5vnjvmrjyjrmtwiwhznc3umifrw36i0g",
+    "fields": {
+        "session_data": "Y2NkYmQ1YTIwMDg0NzgzN2I2ZTY3NjU3MjJhOWFkZjk4MzlhNTRiYjp7ImF1dGgwX3N0YXRlIjoibnVnVU5pWkVVa0xJTlY4ZnFDejgzRmRjakU3Mld4Q3ciLCJfYXV0aF91c2VyX2lkIjoiNiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6Im15X2F1dGgwLmF1dGgwYmFja2VuZC5BdXRoMCIsIl9hdXRoX3VzZXJfaGFzaCI6ImRiZjg1YjQ3MWQ3ODVjZjYwYWE1MTNmYTI2OTg1OTFiMzBjODhjNDciLCJzb2NpYWxfYXV0aF9sYXN0X2xvZ2luX2JhY2tlbmQiOiJhdXRoMCJ9",
+        "expire_date": "2019-05-04T20:13:34.910Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "72po65cv3ewo26zxzng389xahlu3ww35",
+    "fields": {
+        "session_data": "NjY3MmI1ZmU5MjFiMjllY2Y5NzA2MjM5ZTJhNTlhNjkxMDA2ZGFhZDp7ImF1dGgwX3N0YXRlIjoiTlZITkFieTgySjZ5VVFwWkwwVXFpcHNpRFNLc293dUsiLCJfYXV0aF91c2VyX2lkIjoiOCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6Im15X2F1dGgwLmF1dGgwYmFja2VuZC5BdXRoMCIsIl9hdXRoX3VzZXJfaGFzaCI6ImEzZTdkNjAzMzJjODFjM2ZiNGY1MTE0MWJjNjc5ZTA2YTQ2MjZmNWMiLCJzb2NpYWxfYXV0aF9sYXN0X2xvZ2luX2JhY2tlbmQiOiJhdXRoMCJ9",
+        "expire_date": "2019-05-02T00:10:20.148Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lq1g7uk30ih2ayh5v5z9krvwpsjtfqty",
+    "fields": {
+        "session_data": "NThmNTFkMDk1YzJlMjFkZDM5NzZhMDUxYjIwZjNkYmVmZTc1NzRhOTp7ImF1dGgwX3N0YXRlIjoiOUl1bkZmME1vVEZIbGhNclhMMnJaYjhPRUtoZmJ4aW0iLCJfYXV0aF91c2VyX2lkIjoiNiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6Im15X2F1dGgwLmF1dGgwYmFja2VuZC5BdXRoMCIsIl9hdXRoX3VzZXJfaGFzaCI6ImRiZjg1YjQ3MWQ3ODVjZjYwYWE1MTNmYTI2OTg1OTFiMzBjODhjNDciLCJzb2NpYWxfYXV0aF9sYXN0X2xvZ2luX2JhY2tlbmQiOiJhdXRoMCJ9",
+        "expire_date": "2019-05-05T19:34:29.080Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "msctcb0bxwsb9nrphi4wcrz6ri5e8s5j",
+    "fields": {
+        "session_data": "YzE4ZDJkMTA1NzEwMzUxNGE5Zjg3NDBmZTc4OGI0NDkyOWQ3NmZlNjp7ImF1dGgwX3N0YXRlIjoiVDU3R3hEa1pRT25KQk52b1l6aG5EQ3hBakRaOHZpOW0iLCJfYXV0aF91c2VyX2lkIjoiNyIsIl9hdXRoX3VzZXJfYmFja2VuZCI6Im15X2F1dGgwLmF1dGgwYmFja2VuZC5BdXRoMCIsIl9hdXRoX3VzZXJfaGFzaCI6ImEzNDYxOTZlZDA2MGUxMDJkYjk1MDVjMjJkMTM2YjZlNWNjODhlZDUiLCJzb2NpYWxfYXV0aF9sYXN0X2xvZ2luX2JhY2tlbmQiOiJhdXRoMCJ9",
+        "expire_date": "2019-04-30T19:00:55.331Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "oecvc3vpbr4vlg2kx6n54194mjx8r51l",
+    "fields": {
+        "session_data": "NGNkMjgyYTYxNjk3MTNiNzY2OGVlMWI5NDBlMjczNTFkMTJhNmEyMTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyYzJjZjhkZDBiYjdhNzFjYzdjMjFlZDQ3MTE5MjY4ODlkZTcxNjdkIn0=",
+        "expire_date": "2019-05-01T03:47:04.051Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yewl4o5ghq2p4kqv948jql7emhr2t3br",
+    "fields": {
+        "session_data": "MzNjZGVjNWY2NjEyNWY0ZDE5MjA1YjIyMTA4MWU2ZTQwZWVkMzVjZjp7ImF1dGgwX3N0YXRlIjoiN0dJUXo2QUdCczdBRncxQnJNenQ1T2tjb3F3N0FkMzkifQ==",
+        "expire_date": "2019-05-01T06:59:29.614Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "z2ahjwldwupnlc16syohqhc523haewcb",
+    "fields": {
+        "session_data": "M2M1YTRmZDQ2YTliN2JiODkwOWM2ZWNlNDg4ZGY2ZjlhZWJmOWFiOTp7ImF1dGgwX3N0YXRlIjoiNktQUWpqRDM4T25QUmp6OWYxV2ZLU1k4NnhRWkJIbEQiLCJfYXV0aF91c2VyX2lkIjoiNiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6Im15X2F1dGgwLmF1dGgwYmFja2VuZC5BdXRoMCIsIl9hdXRoX3VzZXJfaGFzaCI6ImRiZjg1YjQ3MWQ3ODVjZjYwYWE1MTNmYTI2OTg1OTFiMzBjODhjNDciLCJzb2NpYWxfYXV0aF9sYXN0X2xvZ2luX2JhY2tlbmQiOiJhdXRoMCJ9",
+        "expire_date": "2019-05-02T14:20:48.352Z"
+    }
+},
+{
+    "model": "social_django.usersocialauth",
+    "pk": 5,
+    "fields": {
+        "user": 6,
+        "provider": "auth0",
+        "uid": "google-oauth2|115168053402255816814",
+        "extra_data": "{\"auth_time\": 1555875269, \"picture\": \"https://lh6.googleusercontent.com/-cAjpkblhmtk/AAAAAAAAAAI/AAAAAAAAHyo/HVm4WDBm2fE/photo.jpg\", \"access_token\": \"XOnt2KLiMX61ByGaOhXVGOxRoCrN3UN4\", \"token_type\": \"Bearer\"}"
+    }
+},
+{
+    "model": "social_django.usersocialauth",
+    "pk": 6,
+    "fields": {
+        "user": 7,
+        "provider": "auth0",
+        "uid": "facebook|10155266291867403",
+        "extra_data": "{\"auth_time\": 1555441286, \"picture\": \"https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=10155266291867403&height=50&width=50&ext=1558033285&hash=AeQYjr4FAxerM02c\", \"access_token\": \"J9-6AuOVncFw-n4aiQT86QITdBrWfk4w\", \"token_type\": \"Bearer\"}"
+    }
+},
+{
+    "model": "social_django.usersocialauth",
+    "pk": 7,
+    "fields": {
+        "user": 8,
+        "provider": "auth0",
+        "uid": "google-oauth2|101698623182733660645",
+        "extra_data": "{\"auth_time\": 1555788479, \"picture\": \"https://lh3.googleusercontent.com/-hDrbk6YT70c/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rflxDiupNAXbP2KIwGIIlNmXHSL5w/mo/photo.jpg\", \"access_token\": \"DZixivnOFKZvNZ-0OrgocjICFSywhHx4\", \"token_type\": \"Bearer\"}"
+    }
+},
+{
+    "model": "exchange_app.unit",
+    "pk": "%Prob",
+    "fields": {
+        "name": "Percent Probability"
+    }
+},
+{
+    "model": "exchange_app.unit",
+    "pk": "DFLT",
+    "fields": {
+        "name": "Defalut"
+    }
+},
+{
+    "model": "exchange_app.currency",
+    "pk": "BLR",
+    "fields": {
+        "name": "Ballers"
+    }
+},
+{
+    "model": "exchange_app.instrumenttype",
+    "pk": "Event",
+    "fields": {
+        "name": "One off event"
+    }
+},
+{
+    "model": "exchange_app.instrumenttype",
+    "pk": "Stock",
+    "fields": {
+        "name": "Equity share"
+    }
+},
+{
+    "model": "exchange_app.ordertype",
+    "pk": "LMT",
+    "fields": {
+        "name": "Limit Order"
+    }
+},
+{
+    "model": "exchange_app.orderstatus",
+    "pk": "CANCELED",
+    "fields": {
+        "name": "Canceled Order"
+    }
+},
+{
+    "model": "exchange_app.orderstatus",
+    "pk": "COMPLETED",
+    "fields": {
+        "name": "Completed Order"
+    }
+},
+{
+    "model": "exchange_app.orderstatus",
+    "pk": "KILLED",
+    "fields": {
+        "name": "Killed because Order unsatisfiable"
+    }
+},
+{
+    "model": "exchange_app.orderstatus",
+    "pk": "WORKING",
+    "fields": {
+        "name": "Working Order"
+    }
+},
+{
+    "model": "exchange_app.organization",
+    "pk": "AAM",
+    "fields": {
+        "name": "AdviAdviMurali"
+    }
+},
+{
+    "model": "exchange_app.instrument",
+    "pk": "EngWChamp19",
+    "fields": {
+        "name": "EngWChamp19",
+        "type": "Event",
+        "owner": 7,
+        "allowed_bidders": null,
+        "allowed_offerers": null,
+        "currency": "BLR",
+        "qty_unit": "%Prob",
+        "price_unit": "%Prob",
+        "qty_mult": 1.0,
+        "price_mult": 1.0,
+        "min_price": 0.0,
+        "max_price": 100.0,
+        "price_incr": 1.0,
+        "qty_incr": 1.0,
+        "begin_time": "2019-04-23T00:05:04Z",
+        "expiration": null
+    }
+},
+{
+    "model": "exchange_app.instrument",
+    "pk": "IndPakWC19",
+    "fields": {
+        "name": "India to beat Pakistan on 616/2019",
+        "type": "Event",
+        "owner": 8,
+        "allowed_bidders": null,
+        "allowed_offerers": null,
+        "currency": "BLR",
+        "qty_unit": "DFLT",
+        "price_unit": "%Prob",
+        "qty_mult": 1.0,
+        "price_mult": 1.0,
+        "min_price": 0.0,
+        "max_price": 100.0,
+        "price_incr": 1.0,
+        "qty_incr": 1.0,
+        "begin_time": "2019-04-18T00:12:43Z",
+        "expiration": "2019-06-16T17:00:00Z"
+    }
+},
+{
+    "model": "exchange_app.instrument",
+    "pk": "IndWChamp19",
+    "fields": {
+        "name": "India to win 2019 WC",
+        "type": "Event",
+        "owner": 7,
+        "allowed_bidders": null,
+        "allowed_offerers": null,
+        "currency": "BLR",
+        "qty_unit": "%Prob",
+        "price_unit": "%Prob",
+        "qty_mult": 1.0,
+        "price_mult": 1.0,
+        "min_price": 0.0,
+        "max_price": 100.0,
+        "price_incr": 1.0,
+        "qty_incr": 1.0,
+        "begin_time": "2019-04-21T01:42:31Z",
+        "expiration": "2019-07-21T01:43:20Z"
+    }
+},
+{
+    "model": "exchange_app.trader",
+    "pk": 7,
+    "fields": {
+        "org": "AAM"
+    }
+},
+{
+    "model": "exchange_app.trader",
+    "pk": 8,
+    "fields": {
+        "org": "AAM"
+    }
+},
+{
+    "model": "exchange_app.account",
+    "pk": 1,
+    "fields": {
+        "name": "AAM a/c 1",
+        "org": "AAM"
+    }
+},
+{
+    "model": "exchange_app.account",
+    "pk": 2,
+    "fields": {
+        "name": "Account 1",
+        "org": "AAM"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 1,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T19:33:51Z",
+        "expiration": "2019-04-20T19:33:51Z",
+        "is_buy": true,
+        "quantity": "100.0000",
+        "max_show_size": "10.0",
+        "limit_price": "49.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "100.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 2,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 1,
+        "trader": 8,
+        "type": "LMT",
+        "begin_time": "2019-04-20T19:36:58Z",
+        "expiration": "2019-04-20T19:36:58Z",
+        "is_buy": false,
+        "quantity": "20.0000",
+        "max_show_size": "20.0",
+        "limit_price": "65.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "0.0000",
+        "status": "WORKING"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 3,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T19:33:51Z",
+        "expiration": "2019-04-20T19:33:51Z",
+        "is_buy": true,
+        "quantity": "100.0000",
+        "max_show_size": "10.0",
+        "limit_price": "40.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "0.0000",
+        "status": "WORKING"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 4,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 1,
+        "trader": 8,
+        "type": "LMT",
+        "begin_time": "2019-04-20T19:39:52Z",
+        "expiration": "2019-04-20T19:39:52Z",
+        "is_buy": false,
+        "quantity": "40.0000",
+        "max_show_size": "40.0",
+        "limit_price": "60.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "40.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 6,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T21:41:27Z",
+        "expiration": "2019-04-20T21:41:27Z",
+        "is_buy": true,
+        "quantity": "51.0000",
+        "max_show_size": "5.0",
+        "limit_price": "51.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "51.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 7,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T21:44:27Z",
+        "expiration": "2019-04-20T21:44:27Z",
+        "is_buy": false,
+        "quantity": "61.0000",
+        "max_show_size": "7.0",
+        "limit_price": "61.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "0.0000",
+        "status": "WORKING"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 9,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 2,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T22:16:23Z",
+        "expiration": "2019-04-20T22:16:23Z",
+        "is_buy": true,
+        "quantity": "60.0000",
+        "max_show_size": "1.0",
+        "limit_price": "60.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "60.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 10,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 2,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T22:36:16Z",
+        "expiration": "2019-04-20T22:36:16Z",
+        "is_buy": false,
+        "quantity": "1.0000",
+        "max_show_size": "1.0",
+        "limit_price": "60.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "1.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 11,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 2,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T22:47:15Z",
+        "expiration": "2019-04-20T22:47:15Z",
+        "is_buy": false,
+        "quantity": "1.0000",
+        "max_show_size": "1.0",
+        "limit_price": "60.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "1.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 12,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 2,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T22:48:44Z",
+        "expiration": "2019-04-20T22:48:44Z",
+        "is_buy": false,
+        "quantity": "50.0000",
+        "max_show_size": "50.0",
+        "limit_price": "55.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "18.0000",
+        "status": "WORKING"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 13,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T23:05:02Z",
+        "expiration": "2019-04-20T23:05:02Z",
+        "is_buy": true,
+        "quantity": "150.0000",
+        "max_show_size": "150.0",
+        "limit_price": "45.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "0.0000",
+        "status": "WORKING"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 14,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T23:06:01Z",
+        "expiration": "2019-04-20T23:06:01Z",
+        "is_buy": false,
+        "quantity": "150.0000",
+        "max_show_size": "150.0",
+        "limit_price": "46.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "150.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 15,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T23:06:01Z",
+        "expiration": "2019-04-20T23:06:01Z",
+        "is_buy": false,
+        "quantity": "150.0000",
+        "max_show_size": "150.0",
+        "limit_price": "46.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "41.0000",
+        "status": "WORKING"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 16,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-20T23:06:01Z",
+        "expiration": "2019-04-20T23:06:01Z",
+        "is_buy": true,
+        "quantity": "40.0000",
+        "max_show_size": "40.0",
+        "limit_price": "56.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "40.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 17,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "account": 2,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-21T01:36:10Z",
+        "expiration": "2019-04-21T01:36:10Z",
+        "is_buy": true,
+        "quantity": "150.0000",
+        "max_show_size": "150.0",
+        "limit_price": "56.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "141.0000",
+        "status": "WORKING"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 18,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-21T01:50:16Z",
+        "expiration": "2019-04-21T01:50:16Z",
+        "is_buy": true,
+        "quantity": "20.0000",
+        "max_show_size": "20.0",
+        "limit_price": "20.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "20.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 19,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-21T01:50:38Z",
+        "expiration": "2019-04-21T01:50:38Z",
+        "is_buy": true,
+        "quantity": "20.0000",
+        "max_show_size": "30.0",
+        "limit_price": "30.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "20.0000",
+        "status": "KILLED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 20,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-21T01:51:23Z",
+        "expiration": "2019-04-21T01:51:23Z",
+        "is_buy": false,
+        "quantity": "40.0000",
+        "max_show_size": "40.0",
+        "limit_price": "30.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "20.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 22,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T00:38:43Z",
+        "expiration": "2019-04-23T00:38:43Z",
+        "is_buy": false,
+        "quantity": "12.0000",
+        "max_show_size": "12.0",
+        "limit_price": "20.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "12.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 23,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T00:40:09Z",
+        "expiration": "2019-04-23T00:40:09Z",
+        "is_buy": false,
+        "quantity": "12.0000",
+        "max_show_size": "12.0",
+        "limit_price": "21.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "12.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 24,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T00:53:51Z",
+        "expiration": "2019-04-23T00:53:51Z",
+        "is_buy": false,
+        "quantity": "12.0000",
+        "max_show_size": "12.0",
+        "limit_price": "18.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "12.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 25,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T01:01:45Z",
+        "expiration": "2019-04-23T01:01:45Z",
+        "is_buy": true,
+        "quantity": "12.0000",
+        "max_show_size": "12.0",
+        "limit_price": "21.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "12.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 26,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T22:40:20Z",
+        "expiration": "2019-04-23T22:40:20Z",
+        "is_buy": true,
+        "quantity": "5.0000",
+        "max_show_size": "5.0",
+        "limit_price": "21.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "5.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 27,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T22:45:30Z",
+        "expiration": "2019-04-23T22:45:30Z",
+        "is_buy": false,
+        "quantity": "5.0000",
+        "max_show_size": "5.0",
+        "limit_price": "21.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "5.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 28,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T22:46:25Z",
+        "expiration": "2019-04-23T22:46:25Z",
+        "is_buy": true,
+        "quantity": "5.0000",
+        "max_show_size": "5.0",
+        "limit_price": "21.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "5.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 29,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T22:46:25Z",
+        "expiration": "2019-04-23T22:46:25Z",
+        "is_buy": false,
+        "quantity": "5.0000",
+        "max_show_size": "5.0",
+        "limit_price": "21.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "5.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 30,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T22:48:27Z",
+        "expiration": "2019-04-23T22:48:27Z",
+        "is_buy": false,
+        "quantity": "5.0000",
+        "max_show_size": "5.0",
+        "limit_price": "21.0000",
+        "curr_slice": "4.0000",
+        "filled_quantity": "1.0000",
+        "status": "WORKING"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 32,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T23:50:29Z",
+        "expiration": "2019-04-23T23:50:29Z",
+        "is_buy": true,
+        "quantity": "5.0000",
+        "max_show_size": "5.0",
+        "limit_price": "21.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "5.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 33,
+    "fields": {
+        "instrument": "EngWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-22T23:53:31Z",
+        "expiration": "2019-04-23T23:53:31Z",
+        "is_buy": true,
+        "quantity": "1.0000",
+        "max_show_size": "1.0",
+        "limit_price": "33.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "1.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.order",
+    "pk": 34,
+    "fields": {
+        "instrument": "EngWChamp19",
+        "account": 1,
+        "trader": 7,
+        "type": "LMT",
+        "begin_time": "2019-04-23T00:07:32Z",
+        "expiration": "2019-04-24T00:07:32Z",
+        "is_buy": false,
+        "quantity": "1.0000",
+        "max_show_size": "1.0",
+        "limit_price": "33.0000",
+        "curr_slice": "0.0000",
+        "filled_quantity": "1.0000",
+        "status": "COMPLETED"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 1,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "1.0000",
+        "price": "2.0000",
+        "buy_order": null,
+        "sell_order": null,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-20T22:09:17.562Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 2,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "40.0000",
+        "price": "60.0000",
+        "buy_order": null,
+        "sell_order": null,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-20T22:19:16.074Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 4,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "1.0000",
+        "price": "60.0000",
+        "buy_order": null,
+        "sell_order": null,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-20T22:36:50.061Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 6,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "1.0000",
+        "price": "60.0000",
+        "buy_order": null,
+        "sell_order": null,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-20T22:47:59.219Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 7,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "0.0000",
+        "price": "60.0000",
+        "buy_order": null,
+        "sell_order": null,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-20T22:47:59.228Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 8,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "18.0000",
+        "price": "60.0000",
+        "buy_order": null,
+        "sell_order": null,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-20T22:49:30.961Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 9,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "51.0000",
+        "price": "51.0000",
+        "buy_order": null,
+        "sell_order": null,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-20T23:06:30.350Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 10,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "99.0000",
+        "price": "49.0000",
+        "buy_order": null,
+        "sell_order": null,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-20T23:06:30.355Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 11,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "1.0000",
+        "price": "49.0000",
+        "buy_order": null,
+        "sell_order": null,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-20T23:07:55.669Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 12,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "40.0000",
+        "price": "46.0000",
+        "buy_order": null,
+        "sell_order": null,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-21T00:41:44.586Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 13,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "109.0000",
+        "price": "46.0000",
+        "buy_order": 17,
+        "sell_order": 15,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-21T01:36:27.818Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 14,
+    "fields": {
+        "instrument": "IndPakWC19",
+        "quantity": "32.0000",
+        "price": "55.0000",
+        "buy_order": 17,
+        "sell_order": 12,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-21T01:36:27.823Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 15,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "20.0000",
+        "price": "30.0000",
+        "buy_order": 19,
+        "sell_order": 19,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-21T01:51:48.312Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 17,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "12.0000",
+        "price": "20.0000",
+        "buy_order": 18,
+        "sell_order": 18,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-22T00:38:48.046Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 18,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "8.0000",
+        "price": "20.0000",
+        "buy_order": 18,
+        "sell_order": 18,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-22T00:54:09.247Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 19,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "4.0000",
+        "price": "18.0000",
+        "buy_order": 25,
+        "sell_order": 24,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-22T01:02:17.395Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 20,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "8.0000",
+        "price": "21.0000",
+        "buy_order": 25,
+        "sell_order": 23,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-22T01:02:17.407Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 21,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "4.0000",
+        "price": "21.0000",
+        "buy_order": 26,
+        "sell_order": 23,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-22T22:40:56.298Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 22,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "1.0000",
+        "price": "21.0000",
+        "buy_order": 26,
+        "sell_order": 26,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-22T22:45:55.646Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 23,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "4.0000",
+        "price": "21.0000",
+        "buy_order": 28,
+        "sell_order": 27,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-22T22:47:18.364Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 24,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "1.0000",
+        "price": "21.0000",
+        "buy_order": 28,
+        "sell_order": 28,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-22T22:48:02.224Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 29,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "0.0000",
+        "price": "21.0000",
+        "buy_order": 32,
+        "sell_order": 29,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-22T23:50:32.898Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 30,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "4.0000",
+        "price": "21.0000",
+        "buy_order": 32,
+        "sell_order": 29,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-22T23:50:32.912Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 31,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "0.0000",
+        "price": "21.0000",
+        "buy_order": 32,
+        "sell_order": 30,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-22T23:50:32.924Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 32,
+    "fields": {
+        "instrument": "IndWChamp19",
+        "quantity": "1.0000",
+        "price": "21.0000",
+        "buy_order": 32,
+        "sell_order": 30,
+        "is_buyer_taker": true,
+        "timestamp": "2019-04-22T23:50:32.939Z"
+    }
+},
+{
+    "model": "exchange_app.trade",
+    "pk": 33,
+    "fields": {
+        "instrument": "EngWChamp19",
+        "quantity": "1.0000",
+        "price": "33.0000",
+        "buy_order": 33,
+        "sell_order": 33,
+        "is_buyer_taker": false,
+        "timestamp": "2019-04-23T00:08:01.166Z"
+    }
+},
+{
+    "model": "chat.room",
+    "pk": 1,
+    "fields": {
+        "title": "ExchangeInfo",
+        "staff_only": false
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2019-04-16T17:32:14.954Z",
+        "user": 2,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "maverickone",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2019-04-16T17:39:56.009Z",
+        "user": 2,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "maverickone",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_staff\", \"is_superuser\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2019-04-16T17:51:39.561Z",
+        "user": 2,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "MuralidharReddyDonthireddy",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2019-04-16T17:51:39.562Z",
+        "user": 2,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "maverickone",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2019-04-16T17:52:15.675Z",
+        "user": 2,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "maverickone",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2019-04-16T17:52:15.677Z",
+        "user": 2,
+        "content_type": 3,
+        "object_id": "3",
+        "object_repr": "MuralidharReddyDonthireddy",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2019-04-16T18:33:25.058Z",
+        "user": 2,
+        "content_type": 3,
+        "object_id": "5",
+        "object_repr": "donthireddy",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2019-04-16T18:33:25.060Z",
+        "user": 2,
+        "content_type": 3,
+        "object_id": "4",
+        "object_repr": "maverickone",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2019-04-18T00:09:58.789Z",
+        "user": 2,
+        "content_type": 3,
+        "object_id": "8",
+        "object_repr": "gayamtech",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_staff\", \"is_superuser\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2019-04-18T00:11:18.944Z",
+        "user": 8,
+        "content_type": 15,
+        "object_id": "Event",
+        "object_repr": "Event",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2019-04-18T00:12:11.777Z",
+        "user": 8,
+        "content_type": 15,
+        "object_id": "Stock",
+        "object_repr": "Stock",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2019-04-18T00:14:01.359Z",
+        "user": 8,
+        "content_type": 12,
+        "object_id": "BLR",
+        "object_repr": "BLR",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2019-04-18T00:16:39.530Z",
+        "user": 8,
+        "content_type": 11,
+        "object_id": "%Prob",
+        "object_repr": "%Prob",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2019-04-18T00:18:58.615Z",
+        "user": 8,
+        "content_type": 11,
+        "object_id": "DFLT",
+        "object_repr": "DFLT",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2019-04-18T00:19:03.549Z",
+        "user": 8,
+        "content_type": 13,
+        "object_id": "IndPakWC19",
+        "object_repr": "IndPakWC19",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2019-04-18T13:59:57.519Z",
+        "user": 2,
+        "content_type": 3,
+        "object_id": "6",
+        "object_repr": "maverickone",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_staff\", \"is_superuser\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2019-04-18T14:00:22.133Z",
+        "user": 2,
+        "content_type": 3,
+        "object_id": "7",
+        "object_repr": "donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_staff\", \"is_superuser\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2019-04-18T14:28:27.745Z",
+        "user": 6,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "murali",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"last_login\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2019-04-18T14:29:05.608Z",
+        "user": 6,
+        "content_type": 2,
+        "object_id": "1",
+        "object_repr": "Family and Friends",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2019-04-20T19:30:26.966Z",
+        "user": 7,
+        "content_type": 25,
+        "object_id": "1",
+        "object_repr": "AdviAnuMurali",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2019-04-20T19:34:31.733Z",
+        "user": 7,
+        "content_type": 18,
+        "object_id": "AAM",
+        "object_repr": "AAM",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2019-04-20T19:34:45.388Z",
+        "user": 7,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "AAM a/c 1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2019-04-20T19:35:03.691Z",
+        "user": 7,
+        "content_type": 19,
+        "object_id": "7",
+        "object_repr": "Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2019-04-20T19:35:37.441Z",
+        "user": 7,
+        "content_type": 17,
+        "object_id": "LMT",
+        "object_repr": "LMT",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2019-04-20T19:35:55.489Z",
+        "user": 8,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Account 1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2019-04-20T19:36:27.748Z",
+        "user": 7,
+        "content_type": 16,
+        "object_id": "WORKING",
+        "object_repr": "WORKING",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2019-04-20T19:36:44.105Z",
+        "user": 8,
+        "content_type": 19,
+        "object_id": "8",
+        "object_repr": "Trader gayamtech",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2019-04-20T19:36:49.003Z",
+        "user": 8,
+        "content_type": 19,
+        "object_id": "8",
+        "object_repr": "Trader gayamtech",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2019-04-20T19:37:29.158Z",
+        "user": 7,
+        "content_type": 16,
+        "object_id": "CANCELED",
+        "object_repr": "CANCELED",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2019-04-20T19:37:44.929Z",
+        "user": 7,
+        "content_type": 16,
+        "object_id": "KILLED",
+        "object_repr": "KILLED",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2019-04-20T19:38:09.016Z",
+        "user": 7,
+        "content_type": 16,
+        "object_id": "COMPLETED",
+        "object_repr": "COMPLETED",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2019-04-20T19:38:29.083Z",
+        "user": 7,
+        "content_type": 22,
+        "object_id": "1",
+        "object_repr": "IndPakWC19 100@49 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2019-04-20T19:38:31.542Z",
+        "user": 8,
+        "content_type": 22,
+        "object_id": "2",
+        "object_repr": "IndPakWC19 20@65 Trader gayamtech",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2019-04-20T19:39:33.374Z",
+        "user": 7,
+        "content_type": 22,
+        "object_id": "3",
+        "object_repr": "IndPakWC19 100@40 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2019-04-20T19:40:18.123Z",
+        "user": 8,
+        "content_type": 22,
+        "object_id": "4",
+        "object_repr": "IndPakWC19 40@60 Trader gayamtech",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2019-04-20T21:40:41.751Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "5",
+        "object_repr": "IndPakWC19 50@2 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2019-04-20T21:42:32.549Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "6",
+        "object_repr": "IndPakWC19 51@51 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2019-04-20T21:44:27.045Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "6",
+        "object_repr": "IndPakWC19 51.0000@51.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2019-04-20T21:45:00.284Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "7",
+        "object_repr": "IndPakWC19 61@61 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2019-04-20T22:09:17.566Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "8",
+        "object_repr": "IndPakWC19 1@60 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2019-04-20T22:19:48.113Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "9",
+        "object_repr": "IndPakWC19 60@60 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2019-04-20T22:25:35.673Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "8",
+        "object_repr": "IndPakWC19 1.0000@60.0000 Trader donthireddy",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2019-04-20T22:35:06.796Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "4",
+        "object_repr": "IndPakWC19 40.0000@60.0000 Trader gayamtech",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"filled_quantity\", \"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2019-04-20T22:36:50.068Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "10",
+        "object_repr": "IndPakWC19 1@60 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2019-04-20T22:47:59.236Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "11",
+        "object_repr": "IndPakWC19 1@60 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2019-04-20T22:49:30.967Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "12",
+        "object_repr": "IndPakWC19 50@55 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2019-04-20T23:05:13.967Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "13",
+        "object_repr": "IndPakWC19 150@45 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2019-04-20T23:06:30.362Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "14",
+        "object_repr": "IndPakWC19 150@46 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2019-04-20T23:07:55.674Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "15",
+        "object_repr": "IndPakWC19 150@46 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2019-04-21T00:11:01.898Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "5",
+        "object_repr": "IndPakWC19 50.0000@2.0000 Trader donthireddy",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2019-04-21T00:41:44.593Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "16",
+        "object_repr": "IndPakWC19 40@56 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2019-04-21T01:36:27.824Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "17",
+        "object_repr": "IndPakWC19 150@56 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2019-04-21T01:43:23.079Z",
+        "user": 6,
+        "content_type": 13,
+        "object_id": "IndWChamp19",
+        "object_repr": "IndWChamp19",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2019-04-21T01:44:03.172Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "None",
+        "object_repr": "IndWChamp19 20@20 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2019-04-21T01:49:01.459Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "None",
+        "object_repr": "IndWChamp19 20@20 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2019-04-21T01:50:21.356Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "18",
+        "object_repr": "IndWChamp19 20@20 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2019-04-21T01:51:07.211Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "19",
+        "object_repr": "IndWChamp19 20@30 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2019-04-21T01:51:48.313Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40@30 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2019-04-21T19:35:16.902Z",
+        "user": 6,
+        "content_type": 25,
+        "object_id": "1",
+        "object_repr": "ExchangeInfo",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2019-04-21T20:28:35.541Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2019-04-21T20:30:22.006Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2019-04-21T20:35:59.172Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2019-04-21T20:37:09.354Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2019-04-21T20:51:36.053Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2019-04-21T20:53:14.129Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2019-04-21T21:03:16.712Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2019-04-21T21:05:37.240Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2019-04-21T21:05:52.520Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2019-04-21T21:14:34.950Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2019-04-21T21:18:25.450Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2019-04-21T21:19:48.534Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2019-04-21T21:20:52.740Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2019-04-21T23:01:36.644Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2019-04-21T23:06:58.460Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "20",
+        "object_repr": "IndWChamp19 40.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2019-04-22T00:15:09.718Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "19",
+        "object_repr": "IndWChamp19 20.0000@30.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2019-04-22T00:38:48.054Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "22",
+        "object_repr": "IndWChamp19 12@20 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2019-04-22T00:43:39.966Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "23",
+        "object_repr": "IndWChamp19 12@21 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2019-04-22T00:54:09.254Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "24",
+        "object_repr": "IndWChamp19 12@18 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2019-04-22T01:00:07.513Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "24",
+        "object_repr": "IndWChamp19 12.0000@18.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2019-04-22T01:00:36.032Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "24",
+        "object_repr": "IndWChamp19 12.0000@18.0000 Trader donthireddy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2019-04-22T01:02:17.414Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "25",
+        "object_repr": "IndWChamp19 12@21 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2019-04-22T22:40:56.306Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "26",
+        "object_repr": "IndWChamp19 5@21 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2019-04-22T22:45:55.655Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "27",
+        "object_repr": "IndWChamp19 5@21 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2019-04-22T22:47:18.377Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "28",
+        "object_repr": "IndWChamp19 5@21 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2019-04-22T22:48:02.235Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "29",
+        "object_repr": "IndWChamp19 5@21 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2019-04-22T22:48:49.516Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "30",
+        "object_repr": "IndWChamp19 5@21 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2019-04-22T23:50:32.947Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "32",
+        "object_repr": "IndWChamp19 5@21 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2019-04-22T23:55:52.412Z",
+        "user": 6,
+        "content_type": 2,
+        "object_id": "2",
+        "object_repr": "All",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2019-04-23T00:05:21.666Z",
+        "user": 6,
+        "content_type": 13,
+        "object_id": "EngWChamp19",
+        "object_repr": "EngWChamp19",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2019-04-23T00:06:05.276Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "33",
+        "object_repr": "EngWChamp19 1@33 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2019-04-23T00:08:01.176Z",
+        "user": 6,
+        "content_type": 22,
+        "object_id": "34",
+        "object_repr": "EngWChamp19 1@33 Trader donthireddy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
