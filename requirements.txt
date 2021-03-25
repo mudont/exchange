@@ -29,7 +29,7 @@ django-memoize==2.2.0
 djangorestframework==3.9.2
 djangorestframework-jwt==1.11.0
 djangorestframework-simplejwt==4.3.0
-ecdsa==0.13
+ecdsa==0.13.3
 entrypoints==0.3
 future==0.17.1
 graphviz==0.10.1
