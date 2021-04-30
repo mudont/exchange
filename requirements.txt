@@ -85,7 +85,7 @@ pyzmq==18.0.1
 redis==2.10.6
 requests==2.21.0
 requests-oauthlib==1.2.0
-rsa==4.1
+rsa==4.7
 Send2Trash==1.5.0
 six==1.12.0
 social-auth-app-django==3.1.0
