@@ -1,0 +1,258 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User and Authentication Models
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  emailVerified Boolean  @default(false)
+  passwordHash  String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Relations
+  profile       UserProfile?
+  authProviders AuthProvider[]
+  accounts      Account[]
+  orders        Order[]
+  trades        Trade[]       @relation("UserTrades")
+  buyTrades     Trade[]       @relation("BuyerTrades")
+  sellTrades    Trade[]       @relation("SellerTrades")
+  sessions      UserSession[]
+
+  @@map("users")
+}
+
+model UserProfile {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  firstName String?
+  lastName  String?
+  avatar    String?
+  timezone  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_profiles")
+}
+
+model AuthProvider {
+  id           String   @id @default(cuid())
+  userId       String
+  provider     String // 'google', 'facebook', 'local'
+  providerId   String
+  accessToken  String?
+  refreshToken String?
+  profile      Json?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerId])
+  @@map("auth_providers")
+}
+
+model UserSession {
+  id        String   @id @default(cuid())
+  userId    String
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_sessions")
+}
+
+model EmailVerification {
+  id        String   @id @default(cuid())
+  email     String
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@map("email_verifications")
+}
+
+model PasswordReset {
+  id        String   @id @default(cuid())
+  email     String
+  token     String   @unique
+  expiresAt DateTime
+  used      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@map("password_resets")
+}
+
+// Trading Models
+model Instrument {
+  symbol          String    @id
+  name            String
+  description     String?
+  type            String
+  minPrice        Decimal   @db.Decimal(18, 8)
+  maxPrice        Decimal   @db.Decimal(18, 8)
+  tickSize        Decimal   @db.Decimal(18, 8)
+  lotSize         Decimal   @db.Decimal(18, 8)
+  marginRate      Decimal   @default(0.1) @db.Decimal(5, 4)
+  expirationDate  DateTime?
+  settlementPrice Decimal?  @db.Decimal(18, 8)
+  isActive        Boolean   @default(true)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  // Relations
+  orders    Order[]
+  trades    Trade[]
+  positions Position[]
+
+  @@map("instruments")
+}
+
+model Account {
+  id        String   @id @default(cuid())
+  userId    String
+  name      String
+  type      String   @default("TRADING")
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  orders    Order[]
+  balances  Balance[]
+  positions Position[]
+
+  @@map("accounts")
+}
+
+model Balance {
+  id              String  @id @default(cuid())
+  accountId       String
+  currency        String  @default("USD")
+  balance         Decimal @default(0) @db.Decimal(18, 8)
+  availableBalance Decimal @default(0) @db.Decimal(18, 8)
+  reservedBalance Decimal @default(0) @db.Decimal(18, 8)
+  updatedAt       DateTime @updatedAt
+
+  // Relations
+  account Account @relation(fields: [accountId], references: [id], onDelete: Cascade)
+
+  @@unique([accountId, currency])
+  @@map("balances")
+}
+
+model Order {
+  id               String    @id @default(cuid())
+  instrumentSymbol String
+  accountId        String
+  userId           String
+  side             String // 'BUY' or 'SELL'
+  quantity         Decimal   @db.Decimal(18, 8)
+  price            Decimal   @db.Decimal(18, 8)
+  orderType        String    @default("LIMIT") // 'LIMIT', 'MARKET', 'STOP', 'STOP_LIMIT'
+  timeInForce      String    @default("GTC") // 'GTC', 'IOC', 'FOK', 'DAY'
+  status           String    @default("PENDING") // 'PENDING', 'WORKING', 'FILLED', 'CANCELLED', 'REJECTED'
+  filledQuantity   Decimal   @default(0) @db.Decimal(18, 8)
+  avgFillPrice     Decimal?  @db.Decimal(18, 8)
+  parentOrderId    String?
+  displayQuantity  Decimal?  @db.Decimal(18, 8)
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  // Relations
+  instrument   Instrument @relation(fields: [instrumentSymbol], references: [symbol])
+  account      Account    @relation(fields: [accountId], references: [id])
+  user         User       @relation(fields: [userId], references: [id])
+  parentOrder  Order?     @relation("OrderHierarchy", fields: [parentOrderId], references: [id])
+  childOrders  Order[]    @relation("OrderHierarchy")
+  buyTrades    Trade[]    @relation("BuyOrderTrades")
+  sellTrades   Trade[]    @relation("SellOrderTrades")
+
+  @@index([instrumentSymbol, status, price])
+  @@index([userId, status, createdAt])
+  @@map("orders")
+}
+
+model Trade {
+  id               String   @id @default(cuid())
+  instrumentSymbol String
+  buyOrderId       String
+  sellOrderId      String
+  quantity         Decimal  @db.Decimal(18, 8)
+  price            Decimal  @db.Decimal(18, 8)
+  buyerUserId      String
+  sellerUserId     String
+  timestamp        DateTime @default(now())
+  fees             Json?
+
+  // Relations
+  instrument Instrument @relation(fields: [instrumentSymbol], references: [symbol])
+  buyOrder   Order      @relation("BuyOrderTrades", fields: [buyOrderId], references: [id])
+  sellOrder  Order      @relation("SellOrderTrades", fields: [sellOrderId], references: [id])
+  buyer      User       @relation("BuyerTrades", fields: [buyerUserId], references: [id])
+  seller     User       @relation("SellerTrades", fields: [sellerUserId], references: [id])
+  user       User       @relation("UserTrades", fields: [buyerUserId], references: [id])
+
+  @@index([instrumentSymbol, timestamp])
+  @@index([buyerUserId, timestamp])
+  @@index([sellerUserId, timestamp])
+  @@map("trades")
+}
+
+model Position {
+  id               String   @id @default(cuid())
+  accountId        String
+  instrumentSymbol String
+  quantity         Decimal  @db.Decimal(18, 8) // Positive for long, negative for short
+  avgPrice         Decimal  @db.Decimal(18, 8)
+  unrealizedPnL    Decimal  @default(0) @db.Decimal(18, 8)
+  realizedPnL      Decimal  @default(0) @db.Decimal(18, 8)
+  lastUpdated      DateTime @updatedAt
+
+  // Relations
+  account    Account    @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  instrument Instrument @relation(fields: [instrumentSymbol], references: [symbol])
+
+  @@unique([accountId, instrumentSymbol])
+  @@map("positions")
+}
+
+// System Models
+model SystemConfig {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+
+  @@map("system_config")
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  action    String
+  resource  String
+  details   Json?
+  timestamp DateTime @default(now())
+
+  @@index([userId, timestamp])
+  @@index([action, timestamp])
+  @@map("audit_logs")
+}
